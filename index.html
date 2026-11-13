@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; font-src 'self' data:; img-src 'self' data:; connect-src 'self'">
+<title>Planer</title>
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#F2F4F3" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0E1412" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Planer">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="apple-touch-icon" href="web/icons/icon-180.png">
+<link rel="icon" type="image/png" href="web/icons/icon-192.png">
+<link rel="stylesheet" href="web/schrift/schrift.css">
+<link rel="stylesheet" href="css/planer.css">
+</head>
+<body>
+<div class="app">
+  <nav class="side" id="side" aria-label="Bereiche"></nav>
+  <main class="main" id="main"></main>
+</div>
+<div id="overlay" hidden></div>
+<div id="toasts" aria-live="polite"></div>
+<button id="focus-pill" data-act="focus-open" hidden>Fokus <b>25:00</b></button>
+
+<script src="vendor/Sortable.min.js"></script>
+<script src="web/bruecke.js"></script>
+<script type="planer/modul" data-src="js/01-kern.js"></script>
+<script type="planer/modul" data-src="js/02-zustand.js"></script>
+<script type="planer/modul" data-src="js/03-zug.js"></script>
+<script type="planer/modul" data-src="js/04-dashboard-layout.js"></script>
+<script type="planer/modul" data-src="js/05-lernplan.js"></script>
+<script type="planer/modul" data-src="js/06-abfragen.js"></script>
+<script type="planer/modul" data-src="js/07-umstellungen.js"></script>
+<script type="planer/modul" data-src="js/08-status.js"></script>
+<script type="planer/modul" data-src="js/09-alltag.js"></script>
+<script type="planer/modul" data-src="js/10-jetzt-fokus.js"></script>
+<script type="planer/modul" data-src="js/11-bausteine.js"></script>
+<script type="planer/modul" data-src="js/12-heute.js"></script>
+<script type="planer/modul" data-src="js/13-kalender.js"></script>
+<script type="planer/modul" data-src="js/14-seiten.js"></script>
+<script type="planer/modul" data-src="js/15-schnelleingabe.js"></script>
+<script type="planer/modul" data-src="js/16-termin-dialog.js"></script>
+<script type="planer/modul" data-src="js/17-tagesfluss.js"></script>
+<script type="planer/modul" data-src="js/18-heute-ruhig.js"></script>
+<script type="planer/modul" data-src="js/19-briefing.js"></script>
+<script type="planer/modul" data-src="js/20-haushalt-waechter.js"></script>
+<script type="planer/modul" data-src="js/21-fenster.js"></script>
+<script type="planer/modul" data-src="js/22-google.js"></script>
+<script type="planer/modul" data-src="js/23-dialoge.js"></script>
+<script type="planer/modul" data-src="js/24-widget.js"></script>
+<script type="planer/modul" data-src="js/25-rendern.js"></script>
+<script type="planer/modul" data-src="js/26-finanzen.js"></script>
+<script type="planer/modul" data-src="js/27-diagramme.js"></script>
+<script type="planer/modul" data-src="js/28-ereignisse.js"></script>
+<script type="planer/modul" data-src="js/29-start.js"></script>
+<script src="web/start.js"></script>
+</body>
+</html>
